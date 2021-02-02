@@ -208,7 +208,7 @@ font-family: 'San Francisco Pro Display';
 src: url('SFProDisplay-Regular.eot');
 src: url('SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
 url('SFProDisplay-Regular.woff') format('woff'),
-url('SFProDisplay-Regular.ttf') format('truetype'),
+url('SFProDisplay-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
