@@ -1,0 +1,356 @@
+html{
+	font-family: 'Open Sans', sans-serif;	
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.contact-address{
+	font-style: normal;
+	padding-top: 12px;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1440px;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.contact-address__holder{
+	background: #FED600;
+	height: 32px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-address__link{
+	outline: none;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 17.7px;
+	color: #000000;
+	font-weight: 600;
+}
+
+.contact-margin{
+	margin-right: auto;
+}
+
+.contact-address__icon:not(:last-child){
+	margin-right: 19px;
+}
+
+.margin-second__text{
+	margin-right: 36px;
+}
+.city-margin{
+	margin-right: 40px;
+}
+
+.phone-margin{
+	margin-right: 20px;
+}
+
+.background-handler{
+	box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.16);
+	background: #FFFFFF;
+	max-height: 204px;
+}
+
+.section-header .container span{
+	font-style: italic;
+	font-size: 13px;
+	color: #000000;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+.yandex-container{
+	width: 105px;
+	height: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+	border-radius: 8px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-header .container input{
+	width: 521px;
+	height: 44px;
+	border: 1px solid #BDBDBD;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.section-header .container input::placeholder{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 18px;
+	color: #9E9E9E;
+	padding-left: 16px;
+}
+
+.section-header .container button{
+	width: 160px;
+	height: 36px;
+	background: #D2001C;
+	border-radius: 4px;
+	color: #FFFFFF;
+	border: none;
+	font-size: 13px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-header .container span{
+	display: flex;
+	align-items: center;
+}
+
+.section-header .container .sub-heading__1 span img{
+	margin-right: 10px;
+}
+
+.section-header .container button{
+	cursor: pointer;
+	outline: none;
+}
+
+.section-header .container button img{
+	margin-right: 10px;
+}
+
+.sub-heading__1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 16px;
+}
+.direction-text{
+	font-style: normal;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.direction-text img{
+	margin-right: 14px;
+}
+.sub-heading__2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 13px;
+	margin-bottom: 22px;
+}
+.sub-heading__link{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-decoration: none;
+	outline: none;
+	color: #000000;
+	font-size: 13px;
+	line-height: 18px;
+}
+.border{
+	/*opacity: 0.35;*/
+	border-bottom: 1px solid rgb(189, 189, 189, 0.35); /* rgb(189, 189, 189) === #BDBDBD*/
+	margin-left: -120px;
+	margin-right: -120px;
+}
+
+.dropdown-holder{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 21px;
+	padding-bottom: 22px;
+}
+.dropdown-holder__link{
+	font-style: normal;
+	font-size: 13px;
+	outline: none;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.arrow-margin{
+	margin-left: 5px;
+}
+
+.container-1{
+	margin: 0 auto;
+	width: 1234.46px;
+}
+
+@font-face {
+font-family: 'San Francisco Pro Display';
+src: url('SFProDisplay-Regular.eot');
+src: url('SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+url('SFProDisplay-Regular.woff') format('woff'),
+url('SFProDisplay-Regular.ttf') format('truetype'),
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+.section-text__container .send-resume h2{
+	font-family: 'SF Pro Display';
+	font-size: 27px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 32px;
+	color: #000000;
+}
+
+@font-face {font-family: "SF Pro Text";
+	src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot");
+	src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff") format("woff"), 
+	url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text") format("svg");
+ }
+
+.section-text__container .send-resume button{
+	background: #D2001C;
+	border-radius: 4px;
+	border: none;
+	width: 280px;
+	height: 44px;
+	font-family: 'SF Pro Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	cursor: pointer;
+	outline: none;
+	letter-spacing: -0.7px;
+}
+
+p{
+	font-family: 'SF Pro Text';
+	font-weight: 500;
+	letter-spacing: -0.7px;
+}
+.section-text__container{
+	display: flex;
+}
+.left-paragraphs{
+	max-width: 708px;
+	margin-left: 187px;
+}
+.left-paragraphs p span{
+	color: #D2001C;
+}
+.section-text__container .send-resume p{
+	color: #C4C4C4;
+	font-size: 14px;
+	line-height: 17px;
+}
+.section-company__team{
+	margin-bottom: 40px;
+}
+.section-company__team .section-text__container .left-paragraphs p{
+	font-size: 16px;
+	line-height: 19px;
+	font-style: normal;
+}
+
+.section-about .container-1 a{
+	outline: none;
+	text-decoration: none;
+	color: #4D4D4D;
+	font-family: SF Pro Display;
+	line-height: 19px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration-line: underline;
+}
+
+.section-about .container-1 a:not(:last-child){
+	margin-right: 129px;
+}
+.section-about .container-1 a:hover{
+	cursor: pointer;
+	color: #D2001C;
+}
+.section-about .container-1 a img{
+	margin-left: 15px;
+}
+.section-about .container-1 h2{
+	font-family: SF Pro Text;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	color: #222222;
+	letter-spacing: -0.7px;
+}
+
+.section-grey__background{
+	padding-top: 70px;
+	padding-bottom: 105px;
+}
+
+.grey-container{
+	background-color: #F9F9F9;
+	max-width: 1448px;
+	margin: 0 auto;
+}
+
+.grey-text__icon{
+	padding-left: 137px;
+	padding-right: 137px;
+	padding-top: 70px;
+}
+
+.grey-holder{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.section-grey__background .grey-container .grey-text__icon h2{
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+	color: #222222;
+}
+
+.slider-icon__container{
+	display: flex;
+	margin-right: 142px;
+}
+.grey-bottom-margin{
+	padding-bottom: 63.39px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.grey-img-1{
+	margin-right: 67.61px;
+}
+
+
