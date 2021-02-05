@@ -13,13 +13,25 @@ body{
 	font-style: normal;
 	padding-top: 12px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .contact-address{
+    	padding-top: 0;
+    }
+}
 .container{
 	margin: 0 auto;
 	max-width: 1440px;
 	padding-left: 120px;
 	padding-right: 120px;
 }
-
+@media only screen and (max-width: 1200px) {
+    .container{
+	    width: 900px;
+	    padding-left: 10px;
+	    padding-right: 2px;
+	} 
+}
 .contact-address__holder{
 	background: #FED600;
 	height: 32px;
@@ -91,6 +103,12 @@ body{
 	box-sizing: border-box;
 	border-radius: 4px;
 	outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-header .container input{
+    	width: 400px;
+    }
 }
 
 .section-header .container input[type=text]{
@@ -193,6 +211,13 @@ body{
 	margin-top: 13px;
 	margin-bottom: 22px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .sub-heading__2{
+    	padding-right: 15px;
+    }
+}
+
 .sub-heading__link{
 	font-style: normal;
 	font-weight: normal;
@@ -203,6 +228,12 @@ body{
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sub-heading__link{
+    	font-size: 12px;
+    }
 }
 
 .sub-heading__link:hover{
@@ -245,6 +276,13 @@ body{
 	padding-left: 1px;
 	padding-right: 3px;
 }
+
+/*@media only screen and (max-width: 1200px) {
+    .dropbtn a{
+    	font-size: 9px;
+    }
+}*/
+
 .dropdown-content{
   display: none;
   position: absolute;
@@ -283,6 +321,12 @@ body{
 	width: 1234.46px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .container-1 {
+    	width: 900px;
+	} 
+}
+
 @font-face {
 font-family: 'San Francisco Pro Display';
 src: url('SFProDisplay-Regular.eot');
@@ -302,6 +346,12 @@ font-style: normal;
 	font-weight: normal;
 	line-height: 32px;
 	color: #000000;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-text__container .send-resume h2{
+    	font-size: 23px;
+	} 
 }
 
 @font-face {font-family: "SF Pro Text";
@@ -358,15 +408,30 @@ p{
 	margin-bottom: 40px;
 	position: relative;
 }
-
-.section-company__team .container-1 img{
+.background-picture__container{
 	padding-bottom: 40px;
 	padding-top: 35px;
+	width: 100%;
 }
+.section-company__team .container-1 .background-picture__container img{
+	width: 100%;
+}
+
+/*@media only screen and (max-width: 1200px) {
+    .section-company__team .container-1 .background-picture__container img{
+    	width: 80%;
+	} 
+}*/
 .section-company__team .section-text__container .left-paragraphs p{
 	font-size: 16px;
 	line-height: 19px;
 	font-style: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-company__team .section-text__container .left-paragraphs p{
+    	font-size: 14px;
+	} 
 }
 
 .section-about .container-1 a{
@@ -378,10 +443,23 @@ p{
 	font-style: normal;
 	font-weight: normal;
 	text-decoration-line: underline;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+   .section-about .container-1 a{
+    	font-size: 14px;
+	} 
 }
 
 .section-about .container-1 a:not(:last-child){
 	margin-right: 129px;
+}
+
+@media only screen and (max-width: 1200px) {
+   .section-about .container-1 a:not(:last-child){
+	   	margin-right: 50px;
+   }
 }
 .section-about .container-1 a:hover{
 	cursor: pointer;
@@ -398,6 +476,12 @@ p{
 	line-height: 29px;
 	color: #222222;
 	letter-spacing: -0.7px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-about .container-1 h2{
+    	font-size: 22px;
+	} 
 }
 
 .section-grey__background{
@@ -429,6 +513,12 @@ p{
 	font-size: 36px;
 	line-height: 43px;
 	color: #222222;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-grey__background .grey-container .grey-text__icon h2{
+	    font-size: 26px;
+	} 
 }
 
 .slider-icon__container{
