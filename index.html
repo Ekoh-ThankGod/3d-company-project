@@ -54,22 +54,23 @@
           </div>
           <div class="border"></div>
           <div class="dropdown-holder">
-            <a href="" class="dropdown-holder__link">3D-принтеры<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">3D-сканеры<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Станки<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Роботы<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Образование<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Стоматологам<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Гаджеты<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Материалы<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">ПО<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Решения<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Учебный центр<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
-            <a href="" class="dropdown-holder__link">Услуги<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
+            <a href="" class="dropdown-holder__link" data-value="three-d">3D-принтеры<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"> </a>
+            <a href="" class="dropdown-holder__link" data-value="scanner">3D-сканеры<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка">
+            <a href="" class="dropdown-holder__link" data-value="stanki">Станки<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
+            <a href="" class="dropdown-holder__link" data-value="work">Роботы<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка">
+            </a>
+            <a href="" class="dropdown-holder__link" data-value="education">Образование<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
+            <a href="" class="dropdown-holder__link" data-value="dentistry">Стоматологам<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>            
+            <a href="" class="dropdown-holder__link" data-value="gadgets">Гаджеты<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
+            <a href="" class="dropdown-holder__link" data-value="materials">Материалы<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>      
+            <a href="" class="dropdown-holder__link" data-value="po">ПО<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
+            <a href="" class="dropdown-holder__link" data-value="solution">Решения<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>            
+            <a href="" class="dropdown-holder__link" data-value="study-centre">Учебный центр<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
+            <a href="" class="dropdown-holder__link" data-value="services">Услуги<img class="arrow-margin" src="icons/arrow-down.svg" alt="стрелка"></a>
           </div>
       </div>
     </header>
-    <section class="section-company__team">
+    <section class="section-company__team" id="section1">
       <div class="container-1">
         <img src="icons/background-picture.svg" alt="групповая фотография">
         <div class="section-text__container">
@@ -77,7 +78,7 @@
             <h2>
               Твоя работа <br>в крупнейшем интеграторе <br>цифрового производства
             </h2>
-            <button class="">Отправить резюме</button>
+            <button id = "button-resume">Отправить резюме</button>
             <br>
             <p>
               Нажимая кнопку, вы соглашаетесь <br>на обработку персональных данных.
@@ -113,26 +114,78 @@
         <div class="grey-text__icon grey-holder">
           <h2>Видео о нас</h2>
           <div class="slider-icon__container">
-            <img src="icons/slider-icon-left.svg" alt="slider button left">
-            <img src="icons/slider-icon-right.svg" alt="slider button right">
+            <img class="btn-left" src="icons/slider-icon-left.svg" alt="slider button left">
+            <img class="btn-right" src="icons/slider-icon-right.svg" alt="slider button right">
           </div>
         </div>
          <div class="grey-text__icon grey-bottom-margin">
-          <iframe 
-          width="548" 
-          height="319" 
-          src="https://www.youtube.com/embed/OYFOWAL1NlA"
-          class="frame-border">
-          </iframe>
-          <iframe 
-          width="548" 
-          height="319" 
-          src="https://www.youtube.com/embed/OYFOWAL1NlA"
-          class="frame-border">
-          </iframe>
+          <div class="slider">
+           <div class="slide">
+            <iframe 
+            width="548" 
+            height="319" 
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            class="frame-border">
+            </iframe>
+            <iframe 
+            width="548" 
+            height="319" 
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            class="frame-border">
+            </iframe>
+           </div>
+           <div class="slide slide2">
+            <iframe 
+            width="548" 
+            height="319" 
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            class="frame-border">
+            </iframe>
+            <iframe 
+            width="548" 
+            height="319" 
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            class="frame-border">
+            </iframe>
+           </div>
+           <div class="slide slide3">
+            <iframe 
+            width="548" 
+            height="319" 
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            class="frame-border">
+            </iframe>
+            <iframe 
+            width="548" 
+            height="319" 
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            class="frame-border">
+            </iframe>
+           </div>
+         </div>
         </div>
       </div>
     </section>
+    <div class="overlay hidden"></div>
+    <div class="pop-up__container hidden">
+      <div class="button-container">
+        <button class="close">X</button>
+      </div>
+      <h2>Заполните форму</h2>
+      <form class="pop-up__form">
+        <label for="name">Имя и Фамилия</label>
+        <input type="text" name="name" placeholder="Иван Иванов" required>
+        <label for="name">Номер телефона</label>
+        <input type="tel" name="name" placeholder="+7(555) 555 5555" required>
+        <label for="name">Электонная почта</label>
+        <input type="email" name="name" placeholder="ivanov@mail.ru" required>
+        <label id="label1" for="textarea">Резюме</label>
+        <textArea id="textarea" rows="8">резюме</textArea>
+        <input type="submit" value="Отправить">
+      </form>
+      <span>Нажимая кнопку <<Отправить>> я даю согласие на обработку персональных данных в соответствии с правилами сайта</span>
+    </div>
+    <button id="scroll-arrow" class="hidden">&uarr;</button>
     <script src="./script.js"></script>
   </body>
   </html>
