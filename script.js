@@ -13,6 +13,11 @@ const slides = document.querySelectorAll('.slide');
 const leftButton = document.querySelector('.btn-left');
 const rightButton = document.querySelector('.btn-right');
 
+// Mobile/tablet dropdown menu
+const mobileContent = document.querySelector(".mobile-button__content");
+const mobileBtn = document.querySelector(".mobile-btn__container");
+
+const hideSections = document.querySelectorAll(".section-loop");
 // functions
 
 const manipulateIcons = (e, imagePath) =>{
@@ -94,6 +99,35 @@ const slidePrevious = () => {
   };
   goToSlide(0);
 
+const mobileDropDown = (e) =>{
+
+	if(e.target.classList.contains("mobile-button__content")){
+		return;
+	}
+	
+	let getImageSrc = mobileBtn.children[0].getAttribute("src");
+	
+	if(getImageSrc === "icons/icon-mobile-button.svg"){
+		mobileBtn.children[0].src = "icons/close.svg";
+
+		mobileContent.classList.remove("no-display");
+
+		hideSections.forEach(el => {
+			el.classList.add("no-display");
+		});
+	}
+	else if(getImageSrc === "icons/close.svg"){
+		mobileBtn.children[0].src = "icons/icon-mobile-button.svg";
+
+		mobileContent.classList.add("no-display");
+
+		hideSections.forEach(el => {
+			el.classList.remove("no-display");
+		});
+	}
+
+};
+
 // Event listeners
 
 rightButton.addEventListener("click", slideNext);
@@ -123,3 +157,6 @@ aboutCompany.forEach(about => {
 aboutCompany.forEach(about => {
 	about.addEventListener("mouseleave", changeArrowBack);
 });
+
+mobileBtn.addEventListener("click", mobileDropDown);
+
