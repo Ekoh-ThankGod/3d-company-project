@@ -239,6 +239,12 @@ body{
     }
 }
 
+@media only screen and (max-width: 670px) {
+    .section-header .container input{
+    	width: 80vw;
+    }
+}
+
 .section-header .container input[type=text]{
 	font-family: SF Pro Text;
 	font-size: 16px;
@@ -254,6 +260,13 @@ body{
     .section-header .container input[type=text]{
     	padding-left: 2px;
     	font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .section-header .container input[type=text]{
+    	padding-left: 0;
+    	margin-left: -120px;
     }
 }
 
@@ -288,6 +301,13 @@ body{
 @media only screen and (max-width: 1200px) {
     .section-header .container .sub-heading__1 form button{
     	height: 30px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .section-header .container .sub-heading__1 form button{
+    	width: 40px;
+    	font-size: 11px;
     }
 }
 
@@ -562,8 +582,6 @@ body{
 
 @media only screen and (max-width: 670px) {
     .container-1{
-    	padding-left: 5px;
-    	padding-right: 5px;
     	width: 100%;
 	} 
 }
@@ -1194,6 +1212,38 @@ p{
 	}
 }
 
+.catalog-text__phone{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 
+.catalog-phone__time{
+	font-size: 12px;
+	color: #b5b5b5;
+	margin-top: 3px;
+}
 
+.mobile-button__store{
 
+}
+
+.mobile-button__store{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	background-color: #D2001C;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	border-radius: 3px;
+}
+
+.mobile-button__store img{
+	margin-right: 10px;
+}
+.mobile-contact__icons{
+	display: flex;
+	flex-direction: row;
+}
