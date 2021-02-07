@@ -539,6 +539,13 @@ body{
 	} 
 }
 
+@media only screen and (max-width: 670px) {
+    .container-1{
+    	padding-left: 5px;
+    	padding-right: 5px;
+	} 
+}
+
 @font-face {
 font-family: 'San Francisco Pro Display';
 src: url('SFProDisplay-Regular.eot');
@@ -548,6 +555,21 @@ url('SFProDisplay-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+
+@media only screen and (max-width: 670px) {
+	.section-text__container{
+		display: flex;
+		flex-direction: column;
+		max-width: 100vw;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-text__container .send-resume h2{
+    	font-size: 23px;
+	} 
+}
+
 
 .section-text__container .send-resume h2{
 	font-family: 'SF Pro Display';
@@ -621,6 +643,12 @@ p{
 	} 
 }
 
+@media only screen and (max-width: 670px) {
+	.left-paragraphs{
+		margin-left: 0;
+	}
+}
+
 .left-paragraphs p span{
 	color: #D2001C;
 }
@@ -642,15 +670,22 @@ p{
 	padding-top: 35px;
 	width: 100%;
 }
+
+@media only screen and (max-width: 670px) {
+	.background-picture__container{
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+}
+
 .section-company__team .container-1 .background-picture__container img{
 	width: 100%;
 }
-
-/*@media only screen and (max-width: 1200px) {
-    .section-company__team .container-1 .background-picture__container img{
-    	width: 80%;
-	} 
-}*/
+@media only screen and (max-width: 670px) {
+	.section-company__team .container-1 .background-picture__container img{
+		max-width: 100vw;
+	}
+}
 .section-company__team .section-text__container .left-paragraphs p{
 	font-size: 16px;
 	line-height: 19px;
@@ -725,6 +760,21 @@ p{
 	} 
 }
 
+@media only screen and (max-width: 670px) {
+    .section-links__holder{
+    	display: flex;
+    	flex-direction: column;
+	} 
+}
+
+@media only screen and (max-width: 670px) {
+    .a-link:not(:last-child){
+    	margin-bottom: 15px;
+    	width: 100vw;
+	} 
+}
+
+
 .section-grey__background{
 	padding-top: 70px;
 	padding-bottom: 105px;
@@ -790,7 +840,6 @@ p{
 
 .slider-icon__container{
 	display: flex;
-	margin-right: 142px;
 }
 
 .grey-bottom-margin{
