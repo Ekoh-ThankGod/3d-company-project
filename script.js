@@ -18,6 +18,18 @@ const mobileContent = document.querySelector(".mobile-button__content");
 const mobileBtn = document.querySelector(".mobile-btn__container");
 
 const hideSections = document.querySelectorAll(".section-loop");
+
+const catalog = document.querySelector(".catalog");
+const catalogLink = document.querySelector(".catalog-link");
+const otherDetails = document.querySelector(".other-details");
+const backLink = document.querySelector(".back");
+
+// search optional display variable
+
+const searchBtn = document.querySelector(".search-container");
+const removePhoneTextStore = document.querySelectorAll(".tablet-loop");
+const searchInput = document.querySelector(".form-button");
+
 // functions
 
 const manipulateIcons = (e, imagePath) =>{
@@ -99,6 +111,25 @@ const slidePrevious = () => {
   };
   goToSlide(0);
 
+const simplifyBackLinkFn = () =>{
+	
+	[catalog, backLink].forEach(el => el.classList.add("no-display"));
+
+	otherDetails.classList.remove("no-display");
+	catalogLink.children[0].src = "icons/arrow-right.svg";
+	catalogLink.classList.remove("catalog-background");
+}
+
+const removeMobileDropDown = () =>{
+	mobileBtn.children[0].src = "icons/icon-mobile-button.svg";
+
+	mobileContent.classList.add("no-display");
+
+	hideSections.forEach(el => {
+		el.classList.remove("no-display");
+	});
+}
+
 const mobileDropDown = (e) =>{
 
 	if(e.target.classList.contains("mobile-button__content")){
@@ -115,18 +146,79 @@ const mobileDropDown = (e) =>{
 		hideSections.forEach(el => {
 			el.classList.add("no-display");
 		});
+
+		removeSearch();
 	}
 	else if(getImageSrc === "icons/close.svg"){
-		mobileBtn.children[0].src = "icons/icon-mobile-button.svg";
-
-		mobileContent.classList.add("no-display");
-
-		hideSections.forEach(el => {
-			el.classList.remove("no-display");
-		});
+		removeMobileDropDown();
+		simplifyBackLinkFn();
 	}
 
 };
+
+const dropdownCatalog = (e) => {
+	e.preventDefault();
+
+	if(!e.target.classList.contains("catalog-link")){
+		return;
+	}
+
+	[catalog, backLink].forEach(el => el.classList.remove("no-display"));
+
+	otherDetails.classList.add("no-display");
+	catalogLink.children[0].src = "icons/arrow-down.svg";
+	catalogLink.classList.add("catalog-background");
+
+}
+
+const backLinkFn = (e) =>{
+	e.preventDefault();
+
+	if(!e.target.classList.contains("back")){
+		return;
+	}
+
+	simplifyBackLinkFn();
+}
+
+const removeSearch = () =>{
+	removePhoneTextStore.forEach(el => {
+			el.classList.remove("no-display");
+		});
+
+    searchInput.classList.remove("display");
+
+    searchBtn.children[0].src = "icons/icon-search.svg";
+
+}
+
+const onSearchBtnClicked = (e) =>{
+
+	let searchContainer = e.target.closest(".search-container");
+
+	if(!searchContainer){
+		return;
+	}
+
+	if(searchContainer.children[0].getAttribute("src") === "icons/icon-search.svg"){
+		searchContainer.children[0].src = "icons/close.svg";
+
+		removePhoneTextStore.forEach(el => {
+			el.classList.add("no-display");
+		});
+
+		searchInput.classList.add("display");
+
+		removeMobileDropDown();
+
+	}
+	else if(searchContainer.children[0].getAttribute("src") === "icons/close.svg"){
+		searchContainer.children[0].src = "icons/icon-search.svg";
+
+		removeSearch();
+	}
+
+}
 
 // Event listeners
 
@@ -160,3 +252,7 @@ aboutCompany.forEach(about => {
 
 mobileBtn.addEventListener("click", mobileDropDown);
 
+catalogLink.addEventListener("click", dropdownCatalog);
+backLink.addEventListener("click", backLinkFn);
+
+searchBtn.addEventListener("click", onSearchBtnClicked);
