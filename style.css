@@ -673,10 +673,7 @@ p{
 	font-weight: 500;
 	letter-spacing: -0.7px;
 }
-.section-text__container{
-	display: flex;
-	align-items: flex-start;
-}
+
 .left-paragraphs{
 	max-width: 708px;
 	margin-left: 187px;
