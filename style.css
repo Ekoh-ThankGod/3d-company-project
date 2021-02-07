@@ -22,6 +22,12 @@ body{
     }
 }
 
+@media only screen and (max-width: 670px) {
+    .contact-address{
+    	display: none;
+    }
+}
+
 .container{
 	margin: 0 auto;
 	max-width: 1440px;
@@ -43,6 +49,15 @@ body{
 	    padding-right: 10px;
 	} 
 }
+
+@media only screen and (max-width: 670px) {
+    .container{
+	   max-width: 100vw;
+	   padding-left: 0;
+	   padding-right: 0;
+	} 
+}
+
 .contact-address__holder{
 	background: #FED600;
 	height: 32px;
@@ -121,6 +136,12 @@ body{
 	line-height: 18px;
 	text-decoration: none;
 	outline: none;
+}
+
+@media only screen and (max-width: 670px) {
+    .your-expert{
+    	display: none;
+    }
 }
 
 .mobile-btn__container{
@@ -311,6 +332,12 @@ body{
     .section-header .container button{
     	width: 155px;
     	height: 30px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .section-header .container .button-store{
+    	display: none;
     }
 }
 
@@ -554,6 +581,12 @@ url('SFProDisplay-Regular.woff') format('woff'),
 url('SFProDisplay-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
+}
+
+.section-text__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 @media only screen and (max-width: 670px) {
@@ -960,6 +993,7 @@ p{
 .hidden {
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 
 #scroll-arrow{
@@ -1032,6 +1066,7 @@ p{
 .mobile-boundary{
 	position: relative;
 }
+
 .mobile-button__content{
 	background-color: #fff;
 	padding-left: 10px;
@@ -1041,6 +1076,13 @@ p{
 	z-index: 200;
 	margin-left: -7px;
 	margin-top: 5px;
+}
+
+@media only screen and (max-width: 670px) {
+    .mobile-button__content{
+	    max-width: 100vw;
+	    margin-top: 0;
+	} 
 }
 
 .mobile-content__holder{
